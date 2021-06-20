@@ -1,4 +1,4 @@
-
+#!/bin/bash
 sudo deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
 sudo deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
 sudo deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
