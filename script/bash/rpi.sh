@@ -35,5 +35,12 @@ rsn_pairwise=CCMP' | sudo tee --append /etc/hostapd/hostapd.conf
 echo 'DAEMON_CONF="/etc/hostapd/hostapd.conf"' | sudo tee --append /etc/default/hostapd
 sudo systemctl start hostapd && sudo systemctl start dnsmasq
 sudo echo "su pi -c \'/usr/bin/sudo /usr/bin/python3 /home/pi/raspberry-pi-turnkey/startup.py &\'">>/etc/rc.local
+sudo apt-get install libauthen-pam-perl apt-show-versions
+cd ~
+mkdir webmin
+cd webmin
+wget http://prdownloads.sourceforge.net/webadmin/webmin_1.941_all.deb
+sudo dpkg --install webmin_1.920_all.deb
+
 
 
